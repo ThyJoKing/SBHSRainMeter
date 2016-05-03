@@ -2,6 +2,7 @@
 "bellsAltered":false,
 "bellsAlteredReason":"",
 "bells":[{
+
 "bell":"Roll Call",
 "time":"09:00"},
 {"bell":"1","time":"09:05"},
@@ -20,3 +21,17 @@
 "term":"2",
 "week":"1",
 "weekType":"C"}
+
+[Measure(Blah)]
+Measure = Plugin
+Plugin = WebParser
+Url = [MeasureSite]
+StringIndex = n+1
+
+[Meter(Blah)]
+Meter = String
+MeterStyle = TextStyle
+MeasureName = Measure(Blah)
+Text = (Blah): %1
+Y = 0R
+X = 0r
